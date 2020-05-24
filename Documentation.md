@@ -7,6 +7,10 @@ Dockerfile reference: https://docs.docker.com/engine/reference/builder/
 
 Difference between COPY and ADD commands in a dockerfile: https://nickjanetakis.com/blog/docker-tip-2-the-difference-between-copy-and-add-in-a-dockerile
 
+Configuring tasks: https://guides.gradle.org/migrating-build-logic-from-groovy-to-kotlin/#configuring-tasks
+
+Directory structure of a buildSrc: https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:build_sources
+
 # DOCKER
 Docker multi-stage builds https://itnext.io/how-to-use-docker-multi-stage-build-to-create-optimal-images-for-dev-and-production-568c19a39de8
 
