@@ -1,0 +1,53 @@
+openapi: "3.0.0"
+info:
+  title: "Simple API overview"
+  version: 2.0.0
+  description: "A sample api specification document"
+
+components:
+  schemas:
+    SampleRequest:
+      type: object
+      required:
+        - username
+        - publishedDate
+        - id
+      properties:
+        username:
+          type: string
+        publishedDate:
+          type: string
+          format: datetime
+        id:
+          type: integer
+
+    SampleResponse:
+      type: object
+      properties:
+        status:
+          type: string
+
+paths:
+  /api/v1/post/sample_page:
+    post:
+      summary: "Create a sample post"
+      description: "Create a sample post"
+
+      requestBody:
+        description: "Sample request body"
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SampleRequest"
+
+      responses:
+        200:
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SampleResponse"
+
+
+
+
